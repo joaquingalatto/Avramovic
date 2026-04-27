@@ -1,0 +1,3536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avramovic Flebología & Estética | Tratamientos Premium en Recoleta</title>
+<meta name="description" content="Centro médico especializado en flebología y medicina estética en Recoleta. Tratamientos sin cirugía para várices, armonización facial y rejuvenecimiento natural. Más de 60 años de legado médico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   AVRAMOVIC — Premium Medical Website
+   Color System: #470A2C + warm neutrals
+   Typography: Cormorant Garamond + Inter
+   ============================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand: #470A2C;
+  --brand-light: #5a1a3d;
+  --brand-subtle: rgba(71, 10, 44, 0.08);
+  --brand-hover: #5c1239;
+  --ivory: #FAFAF7;
+  --cream: #F5F2ED;
+  --warm-white: #FDFCFA;
+  --stone: #E8E4DE;
+  --taupe: #B8AFA6;
+  --charcoal: #2C2824;
+  --charcoal-light: #4A4540;
+  --text: #2C2824;
+  --text-secondary: #6B6560;
+  --text-light: #8A8480;
+  --blush: #F0EBE7;
+  --champagne: rgba(71, 10, 44, 0.04);
+
+  --font-display: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --ease-premium: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--warm-white);
+  line-height: 1.75;
+  font-weight: 400;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul { list-style: none; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-narrow {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--charcoal);
+}
+
+h1 { font-size: clamp(2.8rem, 5.2vw, 4.2rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(2.1rem, 3.4vw, 3rem); letter-spacing: -0.015em; }
+h3 { font-size: clamp(1.5rem, 2.5vw, 2rem); letter-spacing: -0.01em; }
+h4 { font-size: clamp(1.2rem, 1.8vw, 1.5rem); }
+
+.label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.label-subtle {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 38px;
+  background: var(--brand);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--brand);
+  transition: all 0.4s var(--ease-premium);
+}
+
+.btn-primary:hover {
+  background: var(--brand-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 37px;
+  background: transparent;
+  color: var(--brand);
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--brand);
+  transition: all 0.4s var(--ease-premium);
+}
+
+.btn-secondary:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+  transition: gap 0.3s var(--ease-premium);
+}
+
+.btn-text:hover { gap: 14px; }
+
+.btn-text svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s var(--ease-premium);
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(253, 252, 250, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(71, 10, 44, 0.06);
+  transition: all 0.4s var(--ease-premium);
+}
+
+.nav.scrolled {
+  background: rgba(253, 252, 250, 0.97);
+  box-shadow: 0 1px 30px rgba(71, 10, 44, 0.04);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 80px;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--brand);
+  letter-spacing: 0.02em;
+}
+
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--charcoal-light);
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--brand);
+  transition: width 0.3s var(--ease-premium);
+}
+
+.nav-links a:hover { color: var(--brand); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--brand); }
+.nav-links a.active::after { width: 100%; }
+
+.nav-cta {
+  padding: 11px 24px !important;
+  background: var(--brand);
+  color: #fff !important;
+  font-size: 12px !important;
+  letter-spacing: 0.14em !important;
+  transition: background 0.3s !important;
+}
+
+.nav-cta::after { display: none !important; }
+.nav-cta:hover { background: var(--brand-hover) !important; color: #fff !important; }
+
+.nav-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+}
+
+.nav-mobile-toggle span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--brand);
+  transition: all 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--warm-white);
+  z-index: 999;
+  padding: 100px 48px 48px;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobile-menu.active { display: flex; }
+
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--charcoal);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--stone);
+  display: block;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover { color: var(--brand); }
+
+.mobile-menu .btn-primary {
+  margin-top: 32px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ============================================
+   PAGE SYSTEM
+   ============================================ */
+
+.page {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-premium);
+}
+
+.page.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  background: linear-gradient(165deg, var(--warm-white) 0%, var(--cream) 50%, var(--blush) 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 140%;
+  background: radial-gradient(ellipse, rgba(71, 10, 44, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero-content { position: relative; z-index: 2; }
+
+.hero-label {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-label::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--brand);
+}
+
+.hero h1 {
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--brand);
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+
+.hero-location {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--taupe);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-location svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  height: 560px;
+}
+
+.hero-image-main {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--stone) 0%, var(--taupe) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image-main::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(71, 10, 44, 0.08));
+}
+
+.hero-image-accent {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 180px;
+  height: 220px;
+  background: var(--brand);
+  opacity: 0.06;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, #d4cec6 0%, #bfb8af 50%, #c8c1b8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(71, 10, 44, 0.06) 100%);
+}
+
+.placeholder-img::after {
+  content: attr(data-label);
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(71, 10, 44, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+.section {
+  padding: 120px 0;
+}
+
+.section-sm {
+  padding: 80px 0;
+}
+
+.section-cream { background: var(--cream); }
+.section-ivory { background: var(--ivory); }
+.section-brand { background: var(--brand); }
+.section-blush { background: var(--blush); }
+.section-champagne { background: var(--champagne); }
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 72px;
+}
+
+.section-header .label { margin-bottom: 20px; display: block; }
+.section-header h2 { margin-bottom: 20px; }
+
+.section-header p {
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.section-divider {
+  width: 48px;
+  height: 1px;
+  background: var(--brand);
+  margin: 0 auto 24px;
+  opacity: 0.4;
+}
+
+/* ============================================
+   INTRO / VALUE PROPOSITION
+   ============================================ */
+
+.intro {
+  padding: 140px 0;
+  background: var(--warm-white);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.intro-left .label { margin-bottom: 24px; display: block; }
+
+.intro-left h2 {
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+.intro-left h2 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.intro-left p {
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.intro-features {
+  display: grid;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.intro-feature {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.intro-feature-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border: 1px solid rgba(71, 10, 44, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+}
+
+.intro-feature-icon svg { width: 18px; height: 18px; }
+
+.intro-feature h4 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--charcoal);
+}
+
+.intro-feature p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ============================================
+   TEAM
+   ============================================ */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(71, 10, 44, 0.06), transparent);
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.team-card .label {
+  font-size: 10px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.team-card p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   STEPS
+   ============================================ */
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  counter-reset: steps;
+}
+
+.step {
+  text-align: center;
+  counter-increment: steps;
+  position: relative;
+}
+
+.step::before {
+  content: counter(steps, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: rgba(71, 10, 44, 0.1);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.step h4 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.step p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================
+   WHY US
+   ============================================ */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 72px;
+}
+
+.why-item {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.why-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.why-item p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================
+   DUAL SERVICES
+   ============================================ */
+
+.services-dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px;
+  cursor: pointer;
+  transition: transform 0.5s var(--ease-premium);
+}
+
+.service-card:hover { transform: translateY(-4px); }
+
+.service-card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.service-card-bg .placeholder-img {
+  position: absolute;
+  inset: 0;
+}
+
+.service-card-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(44, 40, 36, 0.75) 0%, rgba(44, 40, 36, 0.2) 60%, transparent 100%);
+  z-index: 1;
+}
+
+.service-card-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.service-card-content .label {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.service-card-content h3 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.service-card-content p {
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 380px;
+}
+
+.service-card-content .btn-text {
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 4px;
+}
+
+/* ============================================
+   REVIEWS
+   ============================================ */
+
+.reviews-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 64px;
+  background: var(--cream);
+}
+
+.reviews-rating {
+  text-align: center;
+}
+
+.reviews-rating .stars {
+  color: var(--brand);
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.reviews-rating .score {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1;
+}
+
+.reviews-rating .score-label {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  font-style: italic;
+}
+
+.reviews-divider {
+  width: 1px;
+  height: 80px;
+  background: var(--stone);
+}
+
+.reviews-info p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.reviews-info .count {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--stone);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 28px 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.faq-question:hover { color: var(--brand); }
+
+.faq-question svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  transition: transform 0.3s var(--ease-premium);
+  color: var(--taupe);
+}
+
+.faq-item.open .faq-question svg { transform: rotate(45deg); }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s var(--ease-premium), padding 0.4s;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding-bottom: 28px;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+
+.cta-final {
+  background: var(--brand);
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.03) 0%, transparent 60%);
+}
+
+.cta-final .label { color: rgba(255,255,255,0.5); margin-bottom: 24px; display: block; }
+
+.cta-final h2 {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.cta-final p {
+  color: rgba(255,255,255,0.7);
+  font-size: 17px;
+  max-width: 520px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.cta-final .btn-primary {
+  background: #fff;
+  color: var(--brand);
+  border-color: #fff;
+}
+
+.cta-final .btn-primary:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+}
+
+.cta-final .btn-secondary {
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.cta-final .btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.6);
+}
+
+.cta-final-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: var(--charcoal);
+  padding: 80px 0 40px;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* footer logo handled by .footer-logo-img */
+
+.footer-brand p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 300px;
+}
+
+.footer h5 {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 20px;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a {
+  font-size: 17px;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover { color: #fff; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: rgba(255,255,255,0.4);
+  transition: color 0.3s;
+}
+
+.footer-social a:hover { color: #fff; }
+
+/* ============================================
+   PAGE HERO (INTERNAL)
+   ============================================ */
+
+.page-hero {
+  padding: 160px 0 80px;
+  background: linear-gradient(165deg, var(--warm-white) 0%, var(--cream) 100%);
+  text-align: center;
+  position: relative;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--stone);
+}
+
+.page-hero .label { margin-bottom: 20px; display: block; }
+
+.page-hero h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.page-hero p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ============================================
+   ABOUT / NOSOTROS
+   ============================================ */
+
+.about-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-history-image {
+  aspect-ratio: 4/5;
+  position: relative;
+}
+
+.about-history-image .accent-line {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 80px;
+  height: 80px;
+  border-top: 1px solid var(--brand);
+  border-left: 1px solid var(--brand);
+  opacity: 0.3;
+}
+
+.timeline {
+  margin-top: 48px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--brand);
+  min-width: 60px;
+  font-style: italic;
+}
+
+.timeline-item p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Doctor cards full */
+.doctor-full {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--stone);
+  align-items: start;
+}
+
+.doctor-full:last-child { border-bottom: none; }
+
+.doctor-full-image {
+  aspect-ratio: 3/4;
+}
+
+.doctor-full h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.doctor-full .label { margin-bottom: 20px; display: block; }
+
+.doctor-full p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.doctor-credentials {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--stone);
+}
+
+.doctor-credentials li {
+  font-size: 17px;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.doctor-credentials li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 6px;
+  height: 1px;
+  background: var(--brand);
+}
+
+/* ============================================
+   TREATMENT CARDS
+   ============================================ */
+
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.treatment-card {
+  padding: 0;
+  background: var(--warm-white);
+  border: 1px solid var(--stone);
+  transition: all 0.4s var(--ease-premium);
+  position: relative;
+  overflow: hidden;
+}
+
+.treatment-card-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.treatment-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s var(--ease-premium);
+}
+.treatment-card:hover .treatment-card-img img { transform: scale(1.04); }
+
+.treatment-card-body {
+  padding: 28px 28px 32px;
+}
+
+.treatment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--brand);
+  transform: scaleX(0);
+  transition: transform 0.4s var(--ease-premium);
+}
+
+.treatment-card:hover {
+  border-color: rgba(71, 10, 44, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(71, 10, 44, 0.06);
+}
+
+.treatment-card:hover::before { transform: scaleX(1); }
+
+.treatment-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+.treatment-card p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.treatment-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* ============================================
+   CONDITIONS GRID
+   ============================================ */
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.condition-item {
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--warm-white);
+  border: 1px solid var(--stone);
+  transition: all 0.3s;
+}
+
+.condition-item:hover {
+  border-color: rgba(71, 10, 44, 0.2);
+}
+
+.condition-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.condition-item p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ============================================
+   BEFORE / AFTER
+   ============================================ */
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ba-item {
+  position: relative;
+}
+
+.ba-item-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.ba-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s var(--ease-premium);
+}
+
+.ba-item:hover .ba-item-image img { transform: scale(1.02); }
+
+/* legacy placeholder support */
+.ba-item-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  aspect-ratio: 2/1.2;
+}
+
+.ba-item-images .placeholder-img { background: #d0c9c0; }
+.ba-item-images .placeholder-img:last-child { background: #c5bdb3; }
+
+.ba-item-label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.ba-item-label span {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-info-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--stone);
+}
+
+.contact-info-item .label { margin-bottom: 12px; display: block; }
+
+.contact-info-item p {
+  font-size: 17px;
+  color: var(--charcoal);
+  line-height: 1.7;
+}
+
+.contact-info-item .note {
+  font-size: 12px;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.contact-form-container {
+  background: var(--cream);
+  padding: 48px;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-bottom: 1px solid var(--stone);
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--charcoal);
+  transition: border-color 0.3s;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-bottom-color: var(--brand);
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23B8AFA6' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--text-secondary);
+}
+
+.checkbox-label input[type="checkbox"],
+.checkbox-label input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand);
+}
+
+/* ============================================
+   BOOKING FORM PAGE
+   ============================================ */
+
+.booking-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.booking-form .form-group input,
+.booking-form .form-group textarea,
+.booking-form .form-group select {
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--stone);
+}
+
+/* ============================================
+   WHATSAPP FLOAT
+   ============================================ */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 900;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s var(--ease-premium), transform 0.8s var(--ease-premium);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero-image { height: 400px; }
+  .intro-grid { grid-template-columns: 1fr; gap: 48px; }
+  .services-dual { grid-template-columns: 1fr; }
+  .service-card { min-height: 400px; }
+  .about-history { grid-template-columns: 1fr; gap: 48px; }
+  .about-history-image { max-height: 400px; }
+  .doctor-full { grid-template-columns: 1fr; gap: 32px; }
+  .doctor-full-image { max-height: 300px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .treatment-grid { grid-template-columns: repeat(2, 1fr); }
+  .conditions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-inner { padding: 0 24px; }
+  .nav-links { display: none; }
+  .nav-mobile-toggle { display: flex; }
+
+  .hero { min-height: auto; padding: 120px 0 60px; }
+  .hero-image { display: none; }
+
+  .section { padding: 80px 0; }
+  .section-header { margin-bottom: 48px; }
+
+  .team-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+  .steps-grid { grid-template-columns: 1fr; gap: 40px; }
+  .why-grid { grid-template-columns: 1fr; gap: 0; }
+  .treatment-grid { grid-template-columns: 1fr; }
+  .treatment-grid-2 { grid-template-columns: 1fr; }
+  .conditions-grid { grid-template-columns: 1fr; }
+  .ba-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .reviews-block { flex-direction: column; gap: 24px; padding: 40px 24px; }
+  .reviews-divider { width: 60px; height: 1px; }
+  .hero-ctas { flex-direction: column; }
+  .cta-final-buttons { flex-direction: column; align-items: center; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-container { padding: 32px 24px; }
+  .page-hero { padding: 130px 0 60px; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+}
+
+/* ============================================
+   BOOK / PUBLICACIONES PAGE
+   ============================================ */
+
+.book-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background: linear-gradient(170deg, var(--warm-white) 0%, var(--cream) 35%, var(--blush) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.book-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: var(--brand);
+  opacity: 0.03;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.book-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.book-hero-content .label { margin-bottom: 24px; display: flex; align-items: center; gap: 16px; }
+.book-hero-content .label::before { content: ''; width: 40px; height: 1px; background: var(--brand); }
+
+.book-hero-content h1 {
+  font-weight: 100;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.book-hero-content h1 em {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--brand);
+  font-size: 0.45em;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
+.book-hero-tagline {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  letter-spacing: 0.01em;
+}
+
+.book-hero-content > p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+/* Book mockup */
+.book-mockup-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.book-3d {
+  width: 300px;
+  perspective: 1200px;
+  position: relative;
+}
+
+.book-cover {
+  width: 100%;
+  aspect-ratio: 0.68;
+  background: var(--brand);
+  border-radius: 2px 10px 10px 2px;
+  position: relative;
+  transform: rotateY(-12deg);
+  transform-style: preserve-3d;
+  box-shadow:
+    -6px 6px 20px rgba(71, 10, 44, 0.15),
+    -2px 2px 6px rgba(71, 10, 44, 0.1),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
+  overflow: hidden;
+  transition: transform 0.6s var(--ease-premium);
+}
+
+.book-3d:hover .book-cover { transform: rotateY(-6deg); }
+
+.book-cover-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.book-cover-label {
+  font-family: var(--font-body);
+  font-size: 8px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 32px;
+}
+
+.book-cover-title {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.book-cover-subtitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.book-cover-line {
+  width: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+  margin-bottom: 24px;
+}
+
+.book-cover-authors {
+  font-family: var(--font-body);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+}
+
+.book-spine {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  background: linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0.03));
+  border-radius: 2px 0 0 2px;
+  transform: rotateY(-12deg) translateZ(-12px);
+}
+
+.book-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  right: 10%;
+  height: 30px;
+  background: radial-gradient(ellipse, rgba(71, 10, 44, 0.12) 0%, transparent 70%);
+  filter: blur(8px);
+}
+
+/* Editorial quote */
+.book-editorial-quote {
+  padding: 100px 0;
+  text-align: center;
+  background: var(--warm-white);
+  position: relative;
+}
+
+.book-editorial-quote blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--charcoal);
+  line-height: 1.55;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.book-editorial-quote blockquote strong {
+  font-weight: 500;
+  color: var(--brand);
+  font-style: normal;
+}
+
+/* Questions grid */
+.book-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--stone);
+}
+
+.book-question {
+  background: var(--warm-white);
+  padding: 44px 36px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: background 0.3s;
+}
+
+.book-question:hover { background: var(--cream); }
+
+.book-question-mark {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--brand);
+  opacity: 0.3;
+  line-height: 1;
+  min-width: 24px;
+}
+
+.book-question p {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+/* Audience */
+.book-audience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.book-audience-statement h2 {
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.book-audience-statement h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brand);
+}
+
+.book-audience-statement > p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.audience-list {
+  display: grid;
+  gap: 16px;
+}
+
+.audience-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--warm-white);
+  border: 1px solid var(--stone);
+  transition: border-color 0.3s;
+}
+
+.audience-item:hover { border-color: rgba(71, 10, 44, 0.2); }
+
+.audience-item-dot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  background: var(--brand);
+  opacity: 0.4;
+}
+
+.audience-item p {
+  font-size: 16px;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+/* Content themes */
+.book-themes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.book-theme {
+  padding: 28px 24px;
+  background: var(--cream);
+  text-align: center;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.book-theme:hover {
+  background: var(--warm-white);
+  border-color: var(--stone);
+}
+
+.book-theme h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--charcoal);
+}
+
+/* Authority */
+.book-authority-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  text-align: center;
+}
+
+.book-authority-stat {
+  padding: 40px 20px;
+}
+
+.book-authority-stat .number {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--brand);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.book-authority-stat p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Book object section */
+.book-object-section {
+  background: var(--brand);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-object-section::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 50%;
+  height: 160%;
+  background: radial-gradient(ellipse, rgba(255,255,255,0.03) 0%, transparent 60%);
+}
+
+.book-object-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.book-object-text { color: rgba(255,255,255,0.8); position: relative; z-index: 1; }
+.book-object-text .label { color: rgba(255,255,255,0.4); margin-bottom: 20px; display: block; }
+.book-object-text h2 { color: #fff; font-weight: 300; margin-bottom: 24px; }
+
+.book-object-text p {
+  font-size: 17px;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.book-object-mockup {
+  display: flex;
+  justify-content: center;
+}
+
+.book-object-mockup .book-3d { width: 260px; }
+.book-object-mockup .book-cover {
+  box-shadow:
+    -6px 8px 30px rgba(0, 0, 0, 0.3),
+    -2px 2px 8px rgba(0, 0, 0, 0.2);
+  background: var(--cream);
+}
+
+.book-object-mockup .book-cover-inner { color: var(--brand); }
+.book-object-mockup .book-cover-label { color: var(--taupe); }
+.book-object-mockup .book-cover-title { color: var(--brand); }
+.book-object-mockup .book-cover-subtitle { color: var(--text-secondary); }
+.book-object-mockup .book-cover-line { background: var(--brand); opacity: 0.2; }
+.book-object-mockup .book-cover-authors { color: var(--text-light); }
+
+/* Closing statement */
+.book-closing {
+  padding: 120px 0;
+  text-align: center;
+  background: var(--warm-white);
+}
+
+.book-closing blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.book-closing blockquote em {
+  font-weight: 400;
+  color: var(--brand);
+}
+
+.book-closing .attribution {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-top: 24px;
+}
+
+/* Real book images */
+.book-real-img {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+}
+
+.book-real-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(71, 10, 44, 0.18));
+  transition: transform 0.6s var(--ease-premium), filter 0.6s var(--ease-premium);
+}
+
+.book-real-img:hover img {
+  transform: translateY(-6px);
+  filter: drop-shadow(0 28px 50px rgba(71, 10, 44, 0.22));
+}
+
+.book-real-img--ambient {
+  max-width: 420px;
+}
+
+.book-real-img--ambient img {
+  border-radius: 2px;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.2));
+}
+
+/* Book page responsive */
+@media (max-width: 1024px) {
+  .book-hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .book-audience { grid-template-columns: 1fr; gap: 48px; }
+  .book-object-inner { grid-template-columns: 1fr; gap: 48px; }
+  .book-questions-grid { grid-template-columns: repeat(2, 1fr); }
+  .book-themes-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .book-hero { min-height: auto; padding: 120px 0 60px; }
+  .book-3d { width: 220px; }
+  .book-questions-grid { grid-template-columns: 1fr; }
+  .book-themes-grid { grid-template-columns: repeat(2, 1fr); }
+  .book-authority-grid { grid-template-columns: 1fr; gap: 16px; }
+  .book-object-section { padding: 80px 0; }
+  .book-object-mockup { order: -1; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ==========================================
+     NAVIGATION
+     ========================================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home')">
+      <img src="logo.svg" alt="Avramovic Flebología & Estética" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home')" class="active" data-page="home">Inicio</a>
+      <a href="#" onclick="showPage('nosotros')" data-page="nosotros">Nosotros</a>
+      <a href="#" onclick="showPage('flebologia')" data-page="flebologia">Flebología</a>
+      <a href="#" onclick="showPage('estetica')" data-page="estetica">Medicina Estética</a>
+      <a href="#" onclick="showPage('libro')" data-page="libro">Publicaciones</a>
+      <a href="#" onclick="showPage('contacto')" data-page="contacto">Contacto</a>
+      <a href="#" onclick="showPage('turno')" class="nav-cta">Agendar Consulta</a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="toggleMobile()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home'); toggleMobile();">Inicio</a>
+  <a href="#" onclick="showPage('nosotros'); toggleMobile();">Nosotros</a>
+  <a href="#" onclick="showPage('flebologia'); toggleMobile();">Flebología</a>
+  <a href="#" onclick="showPage('estetica'); toggleMobile();">Medicina Estética</a>
+  <a href="#" onclick="showPage('libro'); toggleMobile();">Publicaciones</a>
+  <a href="#" onclick="showPage('contacto'); toggleMobile();">Contacto</a>
+  <a href="#" onclick="showPage('turno'); toggleMobile();" class="btn-primary">Agendar Consulta</a>
+</div>
+
+<!-- ==========================================
+     HOME PAGE
+     ========================================== -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-label">
+            <span class="label">Flebología & Medicina Estética</span>
+          </div>
+          <h1>Salud venosa y belleza natural,<br><em>sin cirugía</em></h1>
+          <p class="hero-subtitle">Tratamientos médicos avanzados que combinan la precisión de la flebología con la delicadeza de la medicina estética. Resultados visibles, naturales y personalizados.</p>
+          <div class="hero-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Recoleta, Buenos Aires — Av. Santa Fe 1753
+          </div>
+          <div class="hero-ctas">
+            <a href="#" onclick="showPage('turno')" class="btn-primary">
+              Agendar Consulta
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-main">
+            <div class="placeholder-img" data-label="Imagen editorial premium"></div>
+          </div>
+          <div class="hero-image-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO / VALUE -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-left reveal">
+          <span class="label">Nuestra filosofía</span>
+          <h2>Escleroterapia moderna y medicina estética de <em>vanguardia</em></h2>
+          <p>Atrás quedó la necesidad de operarse para tratar las várices. Con técnicas avanzadas de escleroterapia y microespuma (FOAM), ofrecemos soluciones ambulatorias que devuelven la salud y la belleza a tus piernas — sin dolor, sin reposo prolongado, con resultados visibles desde las primeras sesiones.</p>
+          <p>En medicina estética, incorporamos las tendencias más actuales de Europa para lograr un rejuvenecimiento natural que respete la esencia de cada paciente.</p>
+        </div>
+        <div class="intro-features reveal">
+          <div class="intro-feature">
+            <div class="intro-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <h4>Tratamientos ambulatorios</h4>
+              <p>Procedimientos no quirúrgicos. Sin internación, sin anestesia general, con recuperación inmediata.</p>
+            </div>
+          </div>
+          <div class="intro-feature">
+            <div class="intro-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Resultados visibles</h4>
+              <p>Mejoras concretas en pocas sesiones. Piernas más sanas, rostro más armonioso, confianza renovada.</p>
+            </div>
+          </div>
+          <div class="intro-feature">
+            <div class="intro-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div>
+              <h4>Naturalidad ante todo</h4>
+              <p>Cada tratamiento se adapta a tu anatomía y a tus expectativas. Resultados que se ven pero no se notan.</p>
+            </div>
+          </div>
+          <div class="intro-feature">
+            <div class="intro-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Legado médico familiar</h4>
+              <p>Más de 60 años de experiencia y tres generaciones dedicadas a la salud venosa y el bienestar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Equipo Médico</span>
+        <div class="section-divider"></div>
+        <h2>Tres generaciones de compromiso con tu salud</h2>
+        <p>Una familia médica unida por la vocación, la formación continua y el trato humano.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-card-image">
+            <img src="images/dr-avramovic-300x300.webp" alt="Dr. Miguel Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dr. Miguel Avramovic</h3>
+          <span class="label">Presidente de Honor — SAFyL</span>
+          <p>Más de 40 años de trayectoria en flebología. Presidente de Honor de la Sociedad Argentina de Flebología y Linfología.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-card-image">
+            <img src="images/miguel-300x300.webp" alt="Dr. Miguel Boris Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dr. Miguel Boris Avramovic</h3>
+          <span class="label">Flebología & Medicina Estética</span>
+          <p>Especialista en flebología y tratamientos estéticos no quirúrgicos. Formación en Argentina y Europa.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-card-image">
+            <img src="images/dra-sofia2-300x300.webp" alt="Dra. Sofía Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dra. Sofía Avramovic</h3>
+          <span class="label">Medicina Estética & Flebología</span>
+          <p>Formación internacional en París, Suiza, Países Bajos y España. Mirada estética europea con sensibilidad natural.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Tu consulta</span>
+        <div class="section-divider"></div>
+        <h2>Agendá tu consulta en tres pasos</h2>
+      </div>
+      <div class="steps-grid reveal">
+        <div class="step">
+          <h4>Hacé click en Agendar Consulta</h4>
+          <p>Seleccioná el tipo de consulta que necesitás y completá tus datos en nuestro formulario.</p>
+        </div>
+        <div class="step">
+          <h4>Ingresá los datos requeridos</h4>
+          <p>Elegí el día y horario que prefieras según tu disponibilidad. El proceso toma menos de un minuto.</p>
+        </div>
+        <div class="step">
+          <h4>Recibí tu confirmación</h4>
+          <p>Nuestro equipo confirmará tu turno por email. Si necesitás algo antes, contactanos por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section-ivory">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Por qué elegirnos</span>
+        <div class="section-divider"></div>
+        <h2>Experiencia, innovación y confianza</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-item">
+          <h4>Técnicas de vanguardia</h4>
+          <p>Aplicamos los métodos más avanzados en escleroterapia, microespuma y medicina estética. Nos capacitamos continuamente en congresos internacionales.</p>
+        </div>
+        <div class="why-item">
+          <h4>Tratamientos ambulatorios</h4>
+          <p>Sin quirófano, sin anestesia general, sin internación. Procedimientos que se integran a tu rutina sin interrumpirla.</p>
+        </div>
+        <div class="why-item">
+          <h4>Procedimientos no quirúrgicos</h4>
+          <p>Tanto en flebología como en estética, priorizamos abordajes mínimamente invasivos con máxima efectividad.</p>
+        </div>
+        <div class="why-item">
+          <h4>Resultados visibles y duraderos</h4>
+          <p>Cada tratamiento está diseñado para producir mejoras concretas, naturales y sostenibles en el tiempo.</p>
+        </div>
+        <div class="why-item">
+          <h4>Atención personalizada</h4>
+          <p>Cada paciente es único. Evaluamos tu caso particular para diseñar un plan de tratamiento a tu medida.</p>
+        </div>
+        <div class="why-item">
+          <h4>Legado familiar de tres generaciones</h4>
+          <p>Desde 1955, nuestra familia combina tradición médica con innovación. Un legado que se traduce en confianza y excelencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DUAL SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Especialidades</span>
+        <div class="section-divider"></div>
+        <h2>Dos mundos, un mismo compromiso</h2>
+        <p>Salud venosa y armonía estética se encuentran bajo una misma mirada médica integral.</p>
+      </div>
+      <div class="services-dual reveal">
+        <div class="service-card" onclick="showPage('flebologia')">
+          <div class="service-card-bg">
+            <div class="placeholder-img" data-label="Flebología"></div>
+          </div>
+          <div class="service-card-content">
+            <span class="label">Salud venosa</span>
+            <h3>Flebología</h3>
+            <p>Tratamientos avanzados para várices, telangiectasias y patologías venosas. Escleroterapia moderna y microespuma sin cirugía.</p>
+            <span class="btn-text">
+              Explorar tratamientos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="service-card" onclick="showPage('estetica')">
+          <div class="service-card-bg">
+            <div class="placeholder-img" data-label="Medicina Estética"></div>
+          </div>
+          <div class="service-card-content">
+            <span class="label">Belleza natural</span>
+            <h3>Medicina Estética</h3>
+            <p>Armonización facial, rejuvenecimiento y tratamientos de última generación con mirada europea. Resultados sutiles y naturales.</p>
+            <span class="btn-text">
+              Explorar tratamientos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="reviews-block reveal">
+        <div class="reviews-rating">
+          <div class="stars">★★★★★</div>
+          <div class="score-label">Excelente</div>
+        </div>
+        <div class="reviews-divider"></div>
+        <div class="reviews-info">
+          <div class="count">+373 reseñas verificadas</div>
+          <p>La confianza de nuestros pacientes nos respalda.<br>Calificación de excelencia sostenida en el tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Preguntas frecuentes</span>
+        <div class="section-divider"></div>
+        <h2>Lo que necesitás saber</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿El tratamiento de várices es doloroso?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Los tratamientos de escleroterapia que realizamos son mínimamente molestos. Se utiliza una aguja muy fina y, en la mayoría de los casos, los pacientes describen una sensación leve y tolerable. No requiere anestesia general y podés retomar tus actividades habituales de forma inmediata.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Necesito reposo después del procedimiento?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No. Nuestros tratamientos son ambulatorios, lo que significa que no requieren internación ni reposo posterior. Podés continuar con tu día con normalidad. En algunos casos, se recomienda el uso de medias de compresión durante unos días.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Se pueden prevenir las várices?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Si bien existe un componente genético importante, ciertos hábitos ayudan a prevenir o retrasar su aparición: mantener un peso saludable, evitar estar de pie o sentado por períodos prolongados, realizar actividad física regular y usar medias de compresión cuando sea indicado. Una consulta temprana permite detectar y tratar venas afectadas antes de que progresen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Cuánto dura una sesión?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Cada sesión tiene una duración aproximada de 20 a 40 minutos, dependiendo del tipo de tratamiento y de la zona a tratar. Durante la primera consulta, evaluamos tu caso particular y te brindamos un plan de tratamiento personalizado con la cantidad estimada de sesiones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <span class="label reveal">Comenzá hoy</span>
+      <h2 class="reveal">Tu bienestar merece atención de excelencia</h2>
+      <p class="reveal">Reservá tu consulta y descubrí cómo podemos ayudarte a lucir y sentirte mejor, con la confianza de un equipo médico con más de 60 años de trayectoria.</p>
+      <div class="cta-final-buttons reveal">
+        <a href="#" onclick="showPage('turno')" class="btn-primary">
+          Agendar Consulta
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">Escribinos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ==========================================
+     NOSOTROS PAGE
+     ========================================== -->
+<div class="page" id="page-nosotros">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Sobre nosotros</span>
+      <h1>Tradición médica, visión contemporánea</h1>
+      <p>Tres generaciones dedicadas a la salud venosa y la medicina estética. Un legado que combina herencia, formación internacional y cuidado personalizado.</p>
+    </div>
+  </div>
+
+  <!-- HISTORY -->
+  <section class="section">
+    <div class="container">
+      <div class="about-history reveal">
+        <div class="about-history-image">
+          <img src="images/dres-nueva.webp" alt="Equipo médico Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+          <div class="accent-line"></div>
+        </div>
+        <div>
+          <span class="label">Nuestra historia</span>
+          <h2 style="margin: 20px 0 24px; font-weight: 300;">Desde 1955, una familia dedicada a la medicina</h2>
+          <p style="color: var(--text-secondary); font-size: 17px; line-height: 1.9; margin-bottom: 16px;">La historia de Avramovic comienza cuando Borivoje y Radomir Avramovic llegan a la Argentina desde Suiza, trayendo consigo una formación médica europea rigurosa y una vocación de servicio que marcó el inicio de un legado.</p>
+          <p style="color: var(--text-secondary); font-size: 17px; line-height: 1.9; margin-bottom: 16px;">Ese legado continúa hoy con el Dr. Miguel Avramovic y sus hijos, Miguel Boris y Sofía, quienes representan más de 60 años de pasión por la flebología y la medicina estética.</p>
+          <p style="color: var(--text-secondary); font-size: 17px; line-height: 1.9;">Combinamos la solidez de la experiencia con la apertura a las técnicas más actuales, formándonos continuamente en congresos internacionales y manteniendo un compromiso invariable: que cada paciente reciba un trato único, profesional y humano.</p>
+          <div class="timeline" style="margin-top: 40px;">
+            <div class="timeline-item">
+              <span class="timeline-year">1955</span>
+              <p>Borivoje y Radomir Avramovic llegan a Argentina desde Suiza, iniciando la tradición médica familiar.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">1981</span>
+              <p>El Dr. Miguel Avramovic se gradúa en Medicina por la UBA y comienza su especialización en flebología.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2013</span>
+              <p>El Dr. Miguel Boris Avramovic se incorpora al equipo tras años de experiencia en Europa.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">Hoy</span>
+              <p>Tres generaciones trabajan juntas combinando legado, innovación y formación internacional continua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTITUTIONAL VALUES -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Nuestro compromiso</span>
+        <div class="section-divider"></div>
+        <h2>Cada paciente es único</h2>
+        <p>Creemos en la formación continua, en los tratamientos seguros y efectivos, y en una atención donde la profesionalidad se combina con la calidez humana. Nos enfocamos en la salud venosa, el bienestar integral y una visión actualizada de la medicina estética.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED TEAM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Equipo médico</span>
+        <div class="section-divider"></div>
+        <h2>Conocé a nuestros profesionales</h2>
+      </div>
+
+      <div class="doctor-full reveal">
+        <div class="doctor-full-image">
+          <img src="images/dr-avramovic-300x300.webp" alt="Dr. Miguel Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        </div>
+        <div>
+          <h3>Dr. Miguel Avramovic</h3>
+          <span class="label">Presidente de Honor — Sociedad Argentina de Flebología y Linfología</span>
+          <p>Nacido en Buenos Aires en 1958, el Dr. Miguel Avramovic se graduó en Medicina en la Universidad de Buenos Aires en 1981. Con más de 40 años de ejercicio profesional, es una referencia en flebología en Argentina.</p>
+          <p>Su dedicación a la especialidad y su contribución al campo le valieron el reconocimiento como Presidente de Honor de la Sociedad Argentina de Flebología y Linfología de la AMA.</p>
+          <ul class="doctor-credentials">
+            <li>Médico graduado en la UBA — 1981</li>
+            <li>Especialista en Flebología y Linfología — 1985</li>
+            <li>Especialista en Geriatría — 1996</li>
+            <li>Presidente de Honor de la SAFyL — AMA</li>
+            <li>Más de 40 años de experiencia clínica</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doctor-full reveal">
+        <div class="doctor-full-image">
+          <img src="images/miguel-boris-300x300.webp" alt="Dr. Miguel Boris Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        </div>
+        <div>
+          <h3>Dr. Miguel Boris Avramovic</h3>
+          <span class="label">Flebología & Medicina Estética</span>
+          <p>Nacido en Buenos Aires en 1981, se graduó en Medicina en la Fundación H. A. Barceló en 2005. Pasó 9 años vinculado al rugby profesional en Europa, donde amplió su visión médica y su experiencia clínica en contextos internacionales.</p>
+          <p>A su regreso a la Argentina en 2013, se especializó en Flebología y Linfología en la UCA y se incorporó al equipo Avramovic, donde combina su formación con un enfoque centrado en tratamientos estéticos y no quirúrgicos.</p>
+          <ul class="doctor-credentials">
+            <li>Médico graduado en Fundación H. A. Barceló — 2005</li>
+            <li>9 años de experiencia médica en Europa</li>
+            <li>Especialista en Flebología y Linfología — UCA</li>
+            <li>Enfoque en tratamientos estéticos no quirúrgicos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doctor-full reveal">
+        <div class="doctor-full-image">
+          <img src="images/dra-sofia2-300x300.webp" alt="Dra. Sofía Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        </div>
+        <div>
+          <h3>Dra. Sofía Avramovic</h3>
+          <span class="label">Medicina Estética & Flebología</span>
+          <p>Estudió Medicina en la Fundación H. A. Barceló y completó un diploma internacional en medicina estética y regenerativa en París. Su formación se extendió por Suiza, Países Bajos, España y la academia de Julie Horne.</p>
+          <p>Con un perfil marcadamente internacional y una mirada estética contemporánea, Sofía aporta al equipo las tendencias europeas más actuales en rejuvenecimiento, armonización facial y tratamientos no invasivos.</p>
+          <ul class="doctor-credentials">
+            <li>Médica graduada en Fundación H. A. Barceló</li>
+            <li>Diploma internacional en medicina estética y regenerativa — París</li>
+            <li>Formación en SAFyL / AMA</li>
+            <li>Capacitación en Suiza, Países Bajos, España y Julie Horne's Academy</li>
+            <li>Enfoque europeo en estética y flebología</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <span class="label reveal">Tu consulta</span>
+      <h2 class="reveal">Conocenos personalmente</h2>
+      <p class="reveal">Agendá una consulta y conversá con nuestro equipo sobre tus necesidades. El primer paso es siempre una evaluación profesional y personalizada.</p>
+      <div class="cta-final-buttons reveal">
+        <a href="#" onclick="showPage('turno')" class="btn-primary">Agendar Consulta</a>
+        <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==========================================
+     FLEBOLOGÍA PAGE
+     ========================================== -->
+<div class="page" id="page-flebologia">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Flebología</span>
+      <h1>Salud venosa sin cirugía</h1>
+      <p>Tratamientos avanzados y personalizados para várices y patologías venosas. Escleroterapia moderna, microespuma FOAM y soluciones ambulatorias con resultados visibles.</p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-grid reveal">
+        <div class="intro-left">
+          <span class="label">Nuestro enfoque</span>
+          <h2>Encontrá el tratamiento ideal para tus piernas</h2>
+          <p>En Avramovic abordamos cada caso con dedicación, profesionalismo e innovación. Sabemos que cada paciente es único, por eso realizamos una evaluación personalizada para definir el tratamiento más adecuado.</p>
+          <p>Nuestras soluciones son no invasivas, efectivas y ambulatorias. Resultados visibles desde las primeras sesiones, sin necesidad de cirugía ni reposo prolongado.</p>
+        </div>
+        <div>
+          <div style="aspect-ratio: 4/3;">
+            <div class="placeholder-img" data-label="Flebología — tratamiento" style="height:100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Patologías que tratamos</span>
+        <div class="section-divider"></div>
+        <h2>Condiciones venosas</h2>
+      </div>
+      <div class="conditions-grid reveal">
+        <div class="condition-item">
+          <h4>Telangiectasias</h4>
+          <p>Várices pequeñas, arañitas vasculares</p>
+        </div>
+        <div class="condition-item">
+          <h4>Várices reticulares</h4>
+          <p>Várices medianas visibles bajo la piel</p>
+        </div>
+        <div class="condition-item">
+          <h4>Várices tronculares</h4>
+          <p>Várices grandes y prominentes</p>
+        </div>
+        <div class="condition-item">
+          <h4>Úlceras venosas</h4>
+          <p>Lesiones cutáneas por insuficiencia venosa</p>
+        </div>
+        <div class="condition-item">
+          <h4>Flebitis</h4>
+          <p>Inflamación de las venas</p>
+        </div>
+        <div class="condition-item">
+          <h4>Dermatitis ocre</h4>
+          <p>Cambios en la piel por estasis venosa</p>
+        </div>
+        <div class="condition-item">
+          <h4>Erisipela</h4>
+          <p>Infección cutánea asociada a várices</p>
+        </div>
+        <div class="condition-item">
+          <h4>Insuficiencia venosa</h4>
+          <p>Compromiso circulatorio de las piernas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Tratamientos</span>
+        <div class="section-divider"></div>
+        <h2>Soluciones avanzadas para cada tipo de várices</h2>
+      </div>
+      <div class="treatment-grid reveal">
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/aranitas-2.png" alt="Telangiectasias — arañitas vasculares">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Telangiectasias</h4>
+            <p>Tratamiento de arañitas vasculares mediante escleroterapia con aguja fina. Procedimiento ambulatorio, sin dolor significativo, con mejora estética visible en pocas sesiones.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/varices-grandes.png" alt="Várices medianas y grandes">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Várices medianas y grandes</h4>
+            <p>Escleroterapia avanzada para várices reticulares y tronculares. Tratamiento no quirúrgico que permite recuperación inmediata y control progresivo de la insuficiencia venosa.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/tratamientos-pequena.png" alt="Microespuma FOAM">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Microespuma FOAM</h4>
+            <p>Técnica de última generación que permite tratar várices de mayor calibre sin cirugía. La microespuma actúa directamente sobre la vena afectada, con excelentes resultados y mínimas molestias.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/ulceras-venosas.jpg" alt="Úlceras venosas">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Úlceras venosas</h4>
+            <p>Tratamiento integral de úlceras causadas por insuficiencia venosa crónica. Abordaje que combina el control venoso con el cuidado de la lesión para favorecer la cicatrización.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/flebitis.png" alt="Erisipela y flebitis">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Erisipela y flebitis</h4>
+            <p>Manejo clínico de infecciones e inflamaciones venosas. Tratamiento oportuno para controlar la inflamación, prevenir complicaciones y restablecer la salud vascular.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/dermatitis-ocre.png" alt="Dermatitis ocre">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Dermatitis ocre</h4>
+            <p>Tratamiento de los cambios cutáneos causados por la estasis venosa. Abordaje que apunta a la causa circulatoria para mejorar la apariencia y salud de la piel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Resultados</span>
+        <div class="section-divider"></div>
+        <h2>Antes y después</h2>
+        <p>Resultados reales de nuestros tratamientos en flebología.</p>
+      </div>
+      <div class="ba-grid reveal">
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-legs-1.jpg" alt="Antes y después — tratamiento de várices">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+        </div>
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-legs-2.jpg" alt="Antes y después — tratamiento de várices">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+        </div>
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-legs-3.jpg" alt="Antes y después — escleroterapia">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <span class="label reveal">Consultá con un especialista</span>
+      <h2 class="reveal">Recuperá la salud y la belleza de tus piernas</h2>
+      <p class="reveal">Agendá una consulta de flebología y recibí una evaluación personalizada. El tratamiento ideal para vos comienza con un diagnóstico preciso.</p>
+      <div class="cta-final-buttons reveal">
+        <a href="#" onclick="showPage('turno')" class="btn-primary">Agendar Consulta</a>
+        <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==========================================
+     MEDICINA ESTÉTICA PAGE
+     ========================================== -->
+<div class="page" id="page-estetica">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Medicina Estética</span>
+      <h1>Belleza natural, precisión médica</h1>
+      <p>Tratamientos de rejuvenecimiento, armonización facial y cuidado corporal con enfoque europeo. Resultados sutiles que respetan tu esencia.</p>
+    </div>
+  </div>
+
+  <!-- DIFFERENTIATOR -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-grid reveal">
+        <div class="intro-left">
+          <span class="label">Nuestra mirada</span>
+          <h2>Una perspectiva estética <em>internacional</em></h2>
+          <p>La Dra. Sofía Avramovic reside en Francia y viaja a Buenos Aires varias veces al año, trayendo las técnicas y tendencias más actuales de la medicina estética europea.</p>
+          <p>Junto con el Dr. Miguel Boris Avramovic, conforman un equipo que combina formación internacional continua con la sensibilidad necesaria para lograr resultados naturales, armoniosos y personalizados.</p>
+          <p>Cada tratamiento está pensado para realzar — nunca para transformar artificialmente. La naturalidad es nuestro principio rector.</p>
+        </div>
+        <div>
+          <div style="aspect-ratio: 4/3;">
+            <div class="placeholder-img" data-label="Medicina estética" style="height:100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Tratamientos faciales</span>
+        <div class="section-divider"></div>
+        <h2>Rostro</h2>
+      </div>
+      <div class="treatment-grid reveal">
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/botox.png" alt="Toxina Botulínica">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Toxina Botulínica</h4>
+            <p>Conocida comercialmente como Botox o Dysport. Reduce las arrugas del tercio superior del rostro — frente, entrecejo y patas de gallo — logrando una expresión más descansada y fresca, siempre natural.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/acido.png" alt="Ácido Hialurónico">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Ácido Hialurónico</h4>
+            <p>Relleno dérmico que restaura volúmenes, hidrata en profundidad y suaviza líneas de expresión. Resultados inmediatos con aspecto natural y duradero.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Bioestimuladores de colágeno</h4>
+            <p>Tratamientos inyectables que estimulan la producción natural de colágeno, mejorando la firmeza y logrando un rejuvenecimiento gradual. Marcas utilizadas: Radiesse, Sculptra, Harmonyca, Profhilo.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Armonización facial</h4>
+            <p>Conjunto de procedimientos que buscan equilibrar las proporciones del rostro, realzando los rasgos naturales con precisión médica y criterio estético refinado.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Rinomodelación sin cirugía</h4>
+            <p>Corrección estética del perfil nasal mediante ácido hialurónico. Un procedimiento rápido, sin anestesia general y sin tiempo de recuperación, con resultados inmediatos.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Relleno de labios</h4>
+            <p>Aumento y definición de labios con ácido hialurónico. Buscamos un resultado sutil y proporcionado que armonice con el conjunto del rostro.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/plasma.png" alt="Plasma Rico en Plaquetas">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Plasma Rico en Plaquetas</h4>
+            <p>Tratamiento regenerativo que utiliza los factores de crecimiento de tu propia sangre para estimular la renovación celular, mejorar la textura de la piel y potenciar la luminosidad.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/peeling.png" alt="Peelings médicos">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Peelings médicos</h4>
+            <p>Exfoliación controlada que renueva la superficie cutánea, mejorando manchas, textura irregular, poros dilatados y signos de fotoenvejecimiento.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-img">
+            <img src="images/mesoterapia2.png" alt="Mesoterapia facial">
+          </div>
+          <div class="treatment-card-body">
+            <h4>Mesoterapia facial</h4>
+            <p>Microinyecciones de vitaminas, aminoácidos y ácido hialurónico que nutren la piel en profundidad, devolviendo luminosidad, hidratación y vitalidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY & CAPILLARY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Tratamientos complementarios</span>
+        <div class="section-divider"></div>
+        <h2>Cuerpo y cabello</h2>
+      </div>
+      <div class="treatment-grid-2 reveal">
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Mesoterapia corporal</h4>
+            <p>Tratamiento localizado mediante microinyecciones que ayudan a reducir adiposidad, mejorar la textura de la piel y combatir la celulitis de forma no invasiva.</p>
+          </div>
+        </div>
+        <div class="treatment-card">
+          <div class="treatment-card-body">
+            <h4>Mesoterapia capilar</h4>
+            <p>Microinyecciones en el cuero cabelludo que estimulan el crecimiento del cabello, fortalecen el folículo y ayudan a frenar la caída. Un tratamiento cada vez más solicitado tanto por hombres como por mujeres.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE AFTER -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Resultados</span>
+        <div class="section-divider"></div>
+        <h2>Antes y después</h2>
+        <p>Resultados reales de nuestros tratamientos estéticos.</p>
+      </div>
+      <div class="ba-grid reveal">
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-nose.jpg" alt="Antes y después — rinomodelación sin cirugía">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+          <p style="text-align:center; margin-top:8px; font-size:12px; color:var(--text-light); letter-spacing:0.06em; text-transform:uppercase;">Rinomodelación</p>
+        </div>
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-contour-1.jpg" alt="Antes y después — contorno facial">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+          <p style="text-align:center; margin-top:8px; font-size:12px; color:var(--text-light); letter-spacing:0.06em; text-transform:uppercase;">Contorno facial</p>
+        </div>
+        <div class="ba-item">
+          <div class="ba-item-image">
+            <img src="images/ba-contour-2.jpg" alt="Antes y después — contorno facial">
+          </div>
+          <div class="ba-item-label"><span>Antes</span><span>Después</span></div>
+          <p style="text-align:center; margin-top:8px; font-size:12px; color:var(--text-light); letter-spacing:0.06em; text-transform:uppercase;">Contorno facial</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <span class="label reveal">Tu consulta estética</span>
+      <h2 class="reveal">Descubrí la mejor versión de vos</h2>
+      <p class="reveal">Agendá una consulta de medicina estética y recibí una evaluación personalizada con nuestro equipo de formación internacional.</p>
+      <div class="cta-final-buttons reveal">
+        <a href="#" onclick="showPage('turno')" class="btn-primary">Agendar Consulta</a>
+        <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==========================================
+     CONTACTO PAGE
+     ========================================== -->
+<div class="page" id="page-contacto">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Contacto</span>
+      <h1>Contactanos</h1>
+      <p>Donde la confianza y la excelencia se encuentran. Elegidos por generaciones, combinamos experiencia en flebología y medicina estética con tratamientos personalizados que priorizan tu salud y realzan tu belleza.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid reveal">
+        <div>
+          <div class="contact-info-item">
+            <span class="label">Sede principal — Recoleta</span>
+            <p>Av. Santa Fe 1753 PB "D"<br>Recoleta, Ciudad Autónoma de Buenos Aires</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Sede Rosario</span>
+            <p>Ocampo 1620, Rosario</p>
+            <p class="note">Atención un día al mes. Consultá disponibilidad.</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">WhatsApp</span>
+            <p><a href="https://wa.me/541141708168" style="color: var(--brand);">+54 11 4170-8168</a></p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Email</span>
+            <p><a href="mailto:[email protected]" style="color: var(--brand);">[email protected]</a></p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Redes</span>
+            <p style="display:flex; gap:24px; flex-wrap:wrap;">
+              <a href="https://facebook.com/dresavramovic" target="_blank" style="color:var(--brand);">Facebook</a>
+              <a href="https://tiktok.com/@flebologiaavramovic" target="_blank" style="color:var(--brand);">TikTok</a>
+              <a href="#" style="color:var(--brand);">Instagram</a>
+            </p>
+          </div>
+          <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="#" onclick="showPage('turno')" class="btn-primary">Agendar Consulta</a>
+            <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <h3 style="margin-bottom: 8px;">Escribinos</h3>
+          <p style="font-size: 17px; color: var(--text-secondary); margin-bottom: 32px;">Completá el formulario y te responderemos a la brevedad.</p>
+          <form>
+            <div class="form-group">
+              <label>Nombre completo</label>
+              <input type="text" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="tu@email.com">
+            </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" placeholder="+54 11 ....">
+            </div>
+            <div class="form-group">
+              <label>Consulta</label>
+              <select>
+                <option value="">Seleccioná un tema</option>
+                <option>Flebología</option>
+                <option>Medicina Estética</option>
+                <option>Turnos</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea placeholder="Contanos en qué podemos ayudarte"></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Enviar consulta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==========================================
+     FORMULARIO DE TURNO PAGE
+     ========================================== -->
+<div class="page" id="page-turno">
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="label">Reservar turno</span>
+      <h1>Coordinemos tu turno</h1>
+      <p>Completá el formulario y nuestro equipo confirmará tu turno por email. El proceso toma menos de un minuto.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="booking-form reveal">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre completo</label>
+              <input type="text" placeholder="Tu nombre y apellido">
+            </div>
+            <div class="form-group">
+              <label>DNI</label>
+              <input type="text" placeholder="Tu número de documento">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Celular</label>
+              <input type="tel" placeholder="+54 11 ....">
+            </div>
+            <div class="form-group">
+              <label>Correo electrónico</label>
+              <input type="email" placeholder="tu@email.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de turno</label>
+            <select>
+              <option value="">Seleccioná una opción</option>
+              <option>Consulta primera vez</option>
+              <option>Consulta primera vez + Tratamiento</option>
+              <option>Sesión de tratamiento</option>
+              <option>Úlcera</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Días disponibles</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox"> Lunes</label>
+              <label class="checkbox-label"><input type="checkbox"> Martes</label>
+              <label class="checkbox-label"><input type="checkbox"> Miércoles</label>
+              <label class="checkbox-label"><input type="checkbox"> Jueves</label>
+              <label class="checkbox-label"><input type="checkbox"> Viernes</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Franja horaria preferida</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox"> 10:00 – 12:30</label>
+              <label class="checkbox-label"><input type="checkbox"> 14:00 – 16:30</label>
+              <label class="checkbox-label"><input type="checkbox"> 18:00 – 19:00</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>¿Cómo nos conociste?</label>
+            <select>
+              <option value="">Seleccioná una opción</option>
+              <option>Soy paciente</option>
+              <option>Fui paciente</option>
+              <option>Redes sociales</option>
+              <option>Google</option>
+              <option>Recomendación</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Comentarios</label>
+            <textarea placeholder="¿Hay algo que quieras contarnos antes de tu consulta?"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top: 16px;">
+            Solicitar turno
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+
+          <p style="text-align:center; margin-top:24px; font-size:13px; color:var(--text-light);">
+            ¿Preferís coordinar por WhatsApp?
+            <a href="https://wa.me/541141708168" target="_blank" style="color:var(--brand); border-bottom:1px solid var(--brand);">Escribinos</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==========================================
+     PUBLICACIONES / LIBRO PAGE
+     ========================================== -->
+<div class="page" id="page-libro">
+
+  <!-- HERO -->
+  <section class="book-hero">
+    <div class="container">
+      <div class="book-hero-inner">
+        <div class="book-hero-content">
+          <div class="label">Publicaciones — Nueva edición</div>
+          <h1>Várices<em>Lo que nunca te contaron</em></h1>
+          <p class="book-hero-tagline">Mitos, verdades y respuestas médicas</p>
+          <p>Una guía clara, compacta y confiable para entender qué son las várices, por qué aparecen, qué tratamientos existen y cómo tomar decisiones informadas sobre tu salud venosa. Escrita por un equipo con más de 43 años de experiencia.</p>
+          <div class="hero-ctas">
+            <a href="#book-contenido" class="btn-primary">
+              Descubrir el libro
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="#" onclick="showPage('contacto')" class="btn-secondary">Consultar al equipo</a>
+          </div>
+        </div>
+        <div class="book-mockup-area">
+          <div class="book-real-img">
+            <img src="images/book-mockup.png" alt="Várices — Lo que nunca te contaron">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL QUOTE -->
+  <section class="book-editorial-quote reveal">
+    <div class="container-narrow">
+      <div class="section-divider" style="margin-bottom:40px;"></div>
+      <blockquote>Hay algo que <strong>nadie te cuenta</strong> sobre las várices — y probablemente es lo que más necesitás saber.</blockquote>
+      <div class="section-divider" style="margin-top:40px;"></div>
+    </div>
+  </section>
+
+  <!-- INTRO: WHY THIS BOOK -->
+  <section class="section section-cream" id="book-contenido">
+    <div class="container">
+      <div class="intro-grid reveal">
+        <div class="intro-left">
+          <span class="label">Por qué este libro</span>
+          <h2>Demasiada confusión, pocas respuestas claras</h2>
+          <p>Alrededor de las várices circulan mitos, verdades a medias y consejos sin fundamento. Miles de personas conviven con dudas sobre qué es normal, qué es grave, qué funciona y qué no. Y muchas veces, las respuestas más importantes son las que nadie explica bien.</p>
+          <p>Este libro nace de la necesidad de ofrecer información real, actualizada y comprensible — sin tecnicismos innecesarios, sin alarmismo y sin promesas vacías. Una publicación que acerca la experiencia del consultorio a quienes buscan entender qué les pasa.</p>
+        </div>
+        <div>
+          <p style="font-size:15px; color:var(--text-secondary); line-height:1.9; margin-bottom:20px;">No es un libro para médicos. Es un libro para vos — para que puedas informarte, entender tu situación y tomar mejores decisiones sobre tu bienestar.</p>
+          <p style="font-size:15px; color:var(--text-secondary); line-height:1.9;">Un camino para saber qué esperar de cada tratamiento, qué señales importan de verdad y cuándo es momento de consultar.</p>
+          <div style="margin-top:40px; padding-top:32px; border-top:1px solid var(--stone);">
+            <p style="font-family:var(--font-display); font-size:1.15rem; font-style:italic; color:var(--charcoal); line-height:1.5;">"La tranquilidad empieza cuando sabés qué está pasando."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUESTIONS THE BOOK ANSWERS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">El libro responde</span>
+        <div class="section-divider"></div>
+        <h2>Las preguntas que todos se hacen</h2>
+        <p>Las dudas más frecuentes de quienes conviven con várices, explicadas con claridad y respaldo médico.</p>
+      </div>
+      <div class="book-questions-grid reveal">
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Por qué aparecen las várices y por qué avanzan con el tiempo?</p>
+        </div>
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Qué señales importan de verdad y cuáles son inofensivas?</p>
+        </div>
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Cuándo sirven los tratamientos sin cirugía y cuándo no son suficientes?</p>
+        </div>
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Qué cirugías de várices se realizan hoy y en qué consisten?</p>
+        </div>
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Qué mitos siguen confundiendo a miles de personas cada día?</p>
+        </div>
+        <div class="book-question">
+          <span class="book-question-mark">?</span>
+          <p>¿Qué hábitos empeoran la circulación y cómo se pueden cambiar?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THE BOOK IS FOR -->
+  <section class="section section-ivory">
+    <div class="container">
+      <div class="book-audience reveal">
+        <div class="book-audience-statement">
+          <span class="label">Para quién es este libro</span>
+          <h2>Este libro no es para médicos. Es un libro <em>para vos</em></h2>
+          <p>Para quienes buscan respuestas simples y confiables. Para quienes necesitan entender su situación antes de tomar una decisión. Para quienes prefieren informarse con seriedad antes de actuar.</p>
+          <p>Una guía pensada para personas reales, con preguntas reales.</p>
+        </div>
+        <div class="audience-list">
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Personas con várices que buscan entender su condición</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Quienes tienen arañitas y no saben si deben tratarlas</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Pacientes explorando opciones quirúrgicas y no quirúrgicas</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Mujeres embarazadas con molestias venosas</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Personas con várices vulvares buscando información clara</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Quienes quieren saber qué hábitos mejoran o empeoran sus piernas</p>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item-dot"></div>
+            <p>Cualquier persona que quiera tomar decisiones informadas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU WILL FIND INSIDE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Contenido</span>
+        <div class="section-divider"></div>
+        <h2>Qué vas a encontrar en este libro</h2>
+        <p>Temas clave explicados con claridad, respaldo científico y un lenguaje accesible.</p>
+      </div>
+      <div class="book-themes-grid reveal">
+        <div class="book-theme"><h4>Várices</h4></div>
+        <div class="book-theme"><h4>Arañitas vasculares</h4></div>
+        <div class="book-theme"><h4>Cirugías de várices</h4></div>
+        <div class="book-theme"><h4>Tratamientos sin cirugía</h4></div>
+        <div class="book-theme"><h4>Flebotónicos</h4></div>
+        <div class="book-theme"><h4>Hábitos que afectan tus piernas</h4></div>
+        <div class="book-theme"><h4>Molestias del embarazo</h4></div>
+        <div class="book-theme"><h4>Várices vulvares</h4></div>
+        <div class="book-theme"><h4>Mitos y verdades</h4></div>
+        <div class="book-theme"><h4>Señales de alerta</h4></div>
+        <div class="book-theme"><h4>Prevención y cuidado</h4></div>
+        <div class="book-theme"><h4>Y mucho más</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORITY -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Respaldo médico</span>
+        <div class="section-divider"></div>
+        <h2>Una publicación con autoridad</h2>
+        <p>Este libro no es contenido genérico. Es el resultado de décadas de experiencia clínica real, dedicadas exclusivamente a la salud venosa.</p>
+      </div>
+      <div class="book-authority-grid reveal">
+        <div class="book-authority-stat">
+          <div class="number">+43</div>
+          <p>Años de experiencia en flebología y linfología</p>
+        </div>
+        <div class="book-authority-stat">
+          <div class="number">3</div>
+          <p>Generaciones dedicadas exclusivamente a la salud venosa</p>
+        </div>
+        <div class="book-authority-stat">
+          <div class="number">Miles</div>
+          <p>De pacientes tratados con resultados documentados</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Autores</span>
+        <div class="section-divider"></div>
+        <h2>El equipo detrás de la publicación</h2>
+      </div>
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-card-image">
+            <img src="images/dr-avramovic-300x300.webp" alt="Dr. Miguel Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dr. Miguel Avramovic</h3>
+          <span class="label">Flebología y Linfología</span>
+          <p>Más de 40 años de trayectoria. Presidente de Honor de la Sociedad Argentina de Flebología y Linfología. La voz de la experiencia clínica.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card-image">
+            <img src="images/miguel-boris-300x300.webp" alt="Dr. Miguel Boris Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dr. Miguel Boris Avramovic</h3>
+          <span class="label">Flebología y Linfología</span>
+          <p>Especialista formado en Argentina y Europa. Combina experiencia clínica con un enfoque actualizado en tratamientos no quirúrgicos.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card-image">
+            <img src="images/dra-sofia2-300x300.webp" alt="Dra. Sofía M. Avramovic" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <h3>Dra. Sofía M. Avramovic</h3>
+          <span class="label">Flebología y Linfología</span>
+          <p>Formación internacional en París, Suiza y Países Bajos. Mirada contemporánea y compromiso con la claridad en la comunicación médica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK AS OBJECT -->
+  <section class="book-object-section">
+    <div class="container">
+      <div class="book-object-inner reveal">
+        <div class="book-object-text">
+          <span class="label">La publicación</span>
+          <h2>Una guía compacta, directa y confiable</h2>
+          <p>Várices: Lo que nunca te contaron es una publicación pensada para transformar información médica en conocimiento accesible. Sin tecnicismos innecesarios, sin alarmismo — solo respuestas claras de quienes llevan más de cuatro décadas tratando pacientes con enfermedades venosas.</p>
+          <p>Cada capítulo aborda un tema concreto con la precisión del consultorio y la calidez de quien realmente quiere que entiendas.</p>
+          <div style="margin-top:32px;">
+            <a href="#" onclick="showPage('contacto')" class="btn-primary" style="background:#fff; color:var(--brand); border-color:#fff;">Consultar disponibilidad</a>
+          </div>
+        </div>
+        <div class="book-object-mockup">
+          <div class="book-real-img book-real-img--ambient">
+            <img src="images/book-ambient.png" alt="Várices — Lo que nunca te contaron, foto editorial">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING STATEMENT -->
+  <section class="book-closing reveal">
+    <div class="container-narrow">
+      <div class="section-divider" style="margin-bottom:48px;"></div>
+      <blockquote>Porque la tranquilidad empieza cuando sabés <em>qué está pasando</em></blockquote>
+      <p class="attribution">Várices: Lo que nunca te contaron — Avramovic</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final">
+    <div class="container">
+      <span class="label reveal">Publicaciones Avramovic</span>
+      <h2 class="reveal">Explorá nuestra publicación</h2>
+      <p class="reveal">Si querés saber más sobre el libro, obtener un ejemplar o consultar con nuestro equipo, estamos a tu disposición.</p>
+      <div class="cta-final-buttons reveal">
+        <a href="#" onclick="showPage('contacto')" class="btn-primary">Consultar al equipo</a>
+        <a href="https://wa.me/541141708168" target="_blank" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.svg" alt="Avramovic Flebología & Estética" class="footer-logo-img">
+        <p>Centro médico especializado en flebología y medicina estética. Más de 60 años de legado familiar en Recoleta, Buenos Aires.</p>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Inicio</a></li>
+          <li><a href="#" onclick="showPage('nosotros')">Nosotros</a></li>
+          <li><a href="#" onclick="showPage('flebologia')">Flebología</a></li>
+          <li><a href="#" onclick="showPage('estetica')">Medicina Estética</a></li>
+          <li><a href="#" onclick="showPage('libro')">Publicaciones</a></li>
+          <li><a href="#" onclick="showPage('contacto')">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="https://wa.me/541141708168" target="_blank">+54 11 4170-8168</a></li>
+          <li><a href="mailto:[email protected]">[email protected]</a></li>
+          <li><a>Av. Santa Fe 1753 PB "D"</a></li>
+          <li><a>Recoleta, Buenos Aires</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Redes</h5>
+        <ul>
+          <li><a href="https://facebook.com/dresavramovic" target="_blank">Facebook</a></li>
+          <li><a href="https://tiktok.com/@flebologiaavramovic" target="_blank">TikTok</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Avramovic Flebología & Estética. Todos los derechos reservados.</span>
+      <div class="footer-social">
+        <a href="https://facebook.com/dresavramovic" target="_blank" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://tiktok.com/@flebologiaavramovic" target="_blank" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/541141708168" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Page navigation
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+
+  document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a => a.classList.remove('active'));
+  const link = document.querySelector(`.nav-links a[data-page="${page}"]`);
+  if (link) link.classList.add('active');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  initReveal();
+}
+
+// Mobile menu
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// FAQ
+function toggleFaq(btn) {
+  btn.closest('.faq-item').classList.toggle('open');
+}
+
+// Reveal on scroll
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', initReveal);
+
+// Prevent form submission for demo
+document.querySelectorAll('form').forEach(f => {
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Formulario enviado correctamente. Nuestro equipo se pondrá en contacto.');
+  });
+});
+</script>
+
+</body>
+</html>
